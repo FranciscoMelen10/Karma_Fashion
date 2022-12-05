@@ -832,6 +832,8 @@ public class Principal extends javax.swing.JFrame {
     private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
         // TODO add your handling code here:
         showPanel(frmInventarios.getFondo());
+        jLabel20.setVisible(false);
+        
     }//GEN-LAST:event_jPanel8MouseClicked
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
