@@ -4,12 +4,9 @@
  */
 package presentacion;
 
-import entidades.Clientes;
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Toolkit;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import javax.swing.JPanel;
 
 /**
@@ -31,7 +28,6 @@ public class Principal extends javax.swing.JFrame {
     FrmProductos frmProductos = new FrmProductos();
     FrmTipoProductos frmTipoProductos1 = new FrmTipoProductos();
     FrmProveedores frmProveedores = new FrmProveedores();
-    FrmDatosTienda frmDatosTienda1 = new FrmDatosTienda();
     /**
      * Creates new form Principal
      */
@@ -42,9 +38,7 @@ public class Principal extends javax.swing.JFrame {
         int year = now.getYear();
         int dia = now.getDayOfMonth();
         int month = now.getMonthValue();
-        String[] meses = {"Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"," ;Septiembre"
-            ,"Octubre","Noviembre","Diciemrbre"};
-       jlabel_date.setText("                                          Hoy es "+dia+" de "+meses[month - 1]+" de "+year);
+       jlabel_date.setText("                                          "+dia+"/"+month+"/"+year);
         showPanel(frmInfo.getFondo());
         
     }
@@ -84,6 +78,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
@@ -454,6 +449,9 @@ public class Principal extends javax.swing.JFrame {
 
         jPanel2.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 190, -1));
 
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LogoBoutique (2).png"))); // NOI18N
+        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, 100, 110));
+
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 190, 630));
 
         jPanel13.setBackground(new java.awt.Color(255, 213, 193));
@@ -659,11 +657,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
         // TODO add your handling code here:
-        
-        
         showPanel(frmInfo.getFondo());
-        
-    
     }//GEN-LAST:event_jPanel4MouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
@@ -946,11 +940,7 @@ public class Principal extends javax.swing.JFrame {
         content.repaint();
     }
     
-    
-    
-    
-    
-    
+
     /**
      * @param args the command line arguments
      */
@@ -1003,6 +993,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
